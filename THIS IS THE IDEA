@@ -1,0 +1,7 @@
+OK so the idea is to make an app that is a simple reader for a person to use in spare time. Reading on norse gods and godesses to pass time on a bench or on the potty. 
+
+I want a list of all the gods and godesses populated on a home screen and when a user clicks or touches a single god or goddess I want the information pertaining to that god/goddess to pop up in a MODAL screen. 
+
+no need for auth as this is a simple reading app and is for educational/entertainment purposes. 
+
+NOTE  add the gods/goddesses information to the database through postman and push them to mongoDB to get information pulling and drawing to the screen.

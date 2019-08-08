@@ -3,7 +3,8 @@ const Schema = mongoose.Schema
 const ObjectId = Schema.Types.ObjectId
 
 const _model = new Schema({
-    Name: { type: String, required: true },
+    image: { type: String, required: true },
+    name: { type: String, required: true },
     description: { type: String, required: true },
     godsStory: { type: String, required: true },
     godOfWhat: { type: String, required: true },
