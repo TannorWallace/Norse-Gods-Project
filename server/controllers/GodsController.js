@@ -8,14 +8,14 @@ export default class GodsController {
     constructor() {
         this.router = express.Router()
             //NOTE all routes after the authenticate method will require the user to be logged in to access
-            .get('', this.getAll)
-            .get('/:id', this.getById)
+            .get('', this.getAllGods)
+            .get('/:id', this.getGodById)
             .post('', this.create)
             .put('/:id', this.edit)
             .delete('/:id', this.delete)
     }
 
-    async getAll(req, res, next) {
+    async getAllGods(req, res, next) {
         try {
             let data = await _godsService.find({})
             return res.send(data)
@@ -23,7 +23,7 @@ export default class GodsController {
 
     }
 
-    async getById(req, res, next) {
+    async getGodById(req, res, next) {
         try {
             let data = await _godsService.findById(req.params.id)
             if (!data) {
